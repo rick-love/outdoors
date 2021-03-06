@@ -1,0 +1,51 @@
+.heading-pillars{
+    &--primary{
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    &--main{
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+    }
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.08rem;
+    }
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    grid-gap: 2rem;
+}
+.card{
+    display: grid;
+    grid-template-rows: max-content 20rem 1fr;
+    padding: 1rem;
+    color:#333;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    &__header{
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        margin: .25rem 0 1rem 0;
+        
+    }
+    ul{
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        list-style: none;
+    }
+    &__img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

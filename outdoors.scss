@@ -1,0 +1,33 @@
+@import './scss/abstracts/functions';
+@import './scss/abstracts/mixins';
+@import './scss/abstracts/variables';
+
+@import './scss/base/animations';
+@import './scss/base/base';
+@import './scss/base/typography';
+@import './scss/base/utilities';
+
+@import './scss/components/bg-video';
+@import './scss/components/button';
+@import './Scss/components/card';
+@import './Scss/components/composition';
+@import './Scss/components/feature-box';
+@import './Scss/components/form';
+@import './scss/components/popup';
+@import './Scss/components/story';
+
+// Fix Card Scss in 3 Pillars.html
+// @import './Scss/layout/card2';
+@import './Scss/layout/footer';
+@import './Scss/layout/grid';
+@import './scss/layout/header';
+@import './scss/layout/navigation';
+
+
+
+@import './scss/pages/home.scss';
+
+// for testing
+.border {
+  border: 1px solid black;
+}

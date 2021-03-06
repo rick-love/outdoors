@@ -1,0 +1,40 @@
+.header {
+  height: 95vh;
+  position: relative;
+  // Background Image with overlay
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url('../img/hero.jpg');
+  background-size: cover;
+  background-position: top;
+
+  //   Polygon Shape Background
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  //   Triangle Shape
+  //   clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); // adjust 'vh'
+    
+  }
+
+  &__logo {
+    height: 2rem;
+    &-box {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+  }
+  &__text-box {
+    // Center Element with Relation to Width of Element
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
