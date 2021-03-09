@@ -22,10 +22,10 @@
   }
 
   // TARGETING RESOLUTION AND SETTING BREAK POINTS FOR WIDTH
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (min-width: 125em),
-    (-webkit-min-device-pixel-ratio: 3x) and (min-width: 37.5em),
-    (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 125em),
+    only screen and (-webkit-min-device-pixel-ratio: 3x) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     // CALCULATE EM ( 2000 / 16 = 125em )
     // Background Image with overlay
     background-image: linear-gradient(
